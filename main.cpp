@@ -21,8 +21,7 @@ int main() {
 
 // Good practice on array initializaiton/ Create an array for names and ages of your team
 // three different initialization methods #1 by array values ; # 2 by size; # 3 by both value and size
-std::string names[] = {"Evan","Serdar","Rachel","Yankang","Beth", "Bart", "Vidya"};
- int ages[] ={25, 30,22, 29, 26,28,19};
+
 
 
 // pass array as a function parameter. For example, the linear search function we did before
@@ -67,8 +66,14 @@ std::string names[] = {"Evan","Serdar","Rachel","Yankang","Beth", "Bart", "Vidya
    }
    cout <<endl;
 
-// parallel array practice
+    double A[] = {15, 10, 45, 30};
+    double b = avgwithoutlowest(A,4);
+    cout << "avgwithoutlowest:"<<b<< endl;
 
+
+// parallel array practice
+    std::string names[] = {"Evan","Serdar","Rachel","Yankang","Beth", "Bart", "Vidya"};
+    int ages[] ={25, 30,22, 29, 26,28,19};
 
 // Output names of people whose age is within the “delta” of the specified “value” (i.e.
 //    the absolute value of difference between their age and “value” is < “delta”)
@@ -77,7 +82,7 @@ std::string names[] = {"Evan","Serdar","Rachel","Yankang","Beth", "Bart", "Vidya
 
    cout<<"close-age person:" <<endl;
 
-    OutputNamesCloseTo(names,ages,7,25,5);
+   OutputNamesCloseTo(names,ages,7,25,5);
 
 
 // what are the names of oldest person?
@@ -88,9 +93,6 @@ std::string names[] = {"Evan","Serdar","Rachel","Yankang","Beth", "Bart", "Vidya
 
     OldestPersonName(names,ages,7);
 
- double A[] = {15, 10, 45, 30};
- double b = avgwithoutlowest(A,4);
- cout << "avgwithoutlowest:"<<b<< endl;
 
 
     return 0;
