@@ -53,10 +53,10 @@ std::string names[] = {"Evan","Serdar","Rachel","Yankang","Beth", "Bart", "Vidya
    int median = Median(numbers, MAX_SIZE);
 
    // test out all the functions
-   cout<< "Max in the array"<<max<<endl;
-    cout<< "Min in the array"<<min<<endl;
-    cout<< "Mean in the array"<<mean<<endl;
-    cout<<"Median in the array"<<median<<endl;
+   cout<< "Max in the array: "<<max<<endl;
+    cout<< "Min in the array: "<<min<<endl;
+    cout<< "Mean in the array: "<<mean<<endl;
+    cout<<"Median in the array: "<<median<<endl;
 
    // output current array and see whether the order has already been changed by sort function
     cout << "array after sort:";
